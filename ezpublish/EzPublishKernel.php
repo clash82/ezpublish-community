@@ -39,7 +39,6 @@ use Doctrine\Bundle\DoctrineBundle\DoctrineBundle;
 use Knp\Bundle\MenuBundle\KnpMenuBundle;
 use Oneup\FlysystemBundle\OneupFlysystemBundle;
 use Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle;
-use EzSystems\PlatformInstallerBundle\EzSystemsPlatformInstallerBundle;
 
 class EzPublishKernel extends Kernel
 {
@@ -76,8 +75,7 @@ class EzPublishKernel extends Kernel
             new WhiteOctoberBreadcrumbsBundle(),
             new NelmioCorsBundle(),
             new KnpMenuBundle(),
-            new OneupFlysystemBundle(),
-            new EzSystemsPlatformInstallerBundle()
+            new OneupFlysystemBundle()
         );
 
         switch ( $this->getEnvironment() )
